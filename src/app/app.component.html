@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Proyecto</title>
+    <!-- Enlaces a los estilos de Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+          .titulo-datos-proyecto {
+            color: black;
+            font-weight: bold;
+        }
+
+        
+        .espaciado-botones {
+            margin-left: 50px;
+            /* Ajusta el valor según el espacio deseado */
+        }
+    </style>
+</head>
+
+<br>
+<body class="h-100">
+
+    <div class="container-fluid h-100">
+        <main class="row justify-content-center align-items-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card p-3">
+                    <h2>Proyecto de ejemplo</h2>
+
+                    <div class="form-group">
+                        <label for="tarea" class="titulo-datos-proyecto">Tarea de ejemplo</label> 
+                        <button class="btn btn-secondary btn-rounded espaciado-botones " type="button">Editar</button>
+                        <br>
+                        <div class="input-group">
+                            <input type="text" id="tarea" class="form-control" placeholder="Ingrese la tarea">
+  
+                        </div>
+                    </div>
+
+                    <p>Fecha de finalización:</p>
+                    <input type="date" id="fecha" class="form-control mb-3">
+
+                    <p class="titulo-datos-proyecto">Responsable</p>
+                    <input type="text" id="responsable" class="form-control mb-3" placeholder="Ingrese el responsable">
+
+                    <p class="titulo-datos-proyecto">Acciones</p>
+                    <div class="d-grid gap-2 col-6">
+                        <button class="btn btn-primary me-md-2" style="background-color: #8390FA" type="button">Iniciar</button>
+                        <button class="btn btn-primary me-md-2" style="background-color: #8390FA" type="button">Pausar</button>
+                        <button class="btn btn-primary me-md-2" style="background-color: #8390FA" type="button">Reanudar</button>
+                        <button class="btn btn-primary me-md-2" style="background-color: #8390FA" type="button">Terminar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts de Bootstrap JS (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
